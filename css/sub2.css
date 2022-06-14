@@ -1,0 +1,276 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body{color:#292929}
+#main2 ul li>a{
+  display:block;
+}
+/* 제품정보,기업정보 */
+
+#mainVisual{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+
+/*////////////////// center ////////////////*/
+.center{/* 회사소개 */
+  width:100%;
+  height:531px;
+  background:url(../image/bridge.jpg) no-repeat center;
+  opacity: 0.9;
+  position:relative;
+  margin-top:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.center_c{
+  width:100%;
+  height:531px;
+  background:url(../image/stairsg.jpg) no-repeat center;
+  position:relative;
+  margin-top:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.center h1,.center_c h1{
+  display:none;
+  color:#fff;
+  font-size:80px;
+  font-family: 'Gothic A1', sans-serif;
+  text-shadow: 1px 1px 2px rgb(68, 68, 68);
+}
+/* main2 위치 bar */
+.main2{
+  position:absolute;
+  width:100%;
+  height:30px;
+  left:0px;
+  top:601px;
+  padding-left:50px;
+  background:rgba(66, 66, 66, 0.5);
+  z-index:100;
+}
+.main2 ul li{
+  float:left;
+  padding:7px 0 20px 10px;
+  position:relative;
+  color:#dbdbdb;
+}
+/* 이제 밑에 본문내용 __________________________ */
+
+/* section{background:#dbf2ff;} */
+/* 붉은 active박스 */
+#box{
+  width:1200px;
+  background:#fff;
+  margin:0 auto;
+}
+.box1 h3{
+  text-align:center;
+  font-size:30px;
+  padding:50px 0 15px 0;
+}
+.box1 hr{
+  border: 1px solid black; 
+  width: 0px; 
+  height: 130px;
+  display:block;
+  margin:0 auto;
+}
+.box1 ul{
+  display:inline-block;
+}
+.box1 ul li{
+  float:left;
+  position:relative;
+  left:173%;
+  margin:35px 10px;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:#fff;
+  border:1px solid #b42222;
+  padding:10px 30px;
+  font-weight:bold;
+}
+.box1 ul li:hover{
+  background:#b42222;
+  color:#fff;
+}
+.box1 ul li:nth-child(2){
+  background:#b42222;
+  color:#fff;
+  cursor:default;
+}
+.box1 p{
+  text-align:center;
+  font-size:15px;
+  line-height:24px;
+  margin-bottom:30px;
+}
+/* with 쌍용 */
+.box2{/* 내려갈때 이미지 내려감 */
+  position:relative;
+  width:100%;
+  height:450px;
+  left:0%;
+  top:40%;
+  background:url(../image/sky.jpg) no-repeat center;
+}
+.box2 p{
+  position:absolute;
+  left:39%;
+  top:40%;
+  color:#fff;
+  font-size:60px;
+  font-family: 'Gothic A1', sans-serif;
+}
+.box3{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-bottom:100px;
+  
+}
+.box3 ul li{
+  float:left;
+  width:280px;
+  height:280px;
+  background:#ccc;
+  box-shadow:2px 2px 10px #ccc;
+  border-radius:50%;
+  margin:50px 30px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-size:25px;
+  font-weight:bold;
+  margin-left:70px;
+}
+.box3 ul li>span{font-size:80px;}
+.box3 ul li:nth-child(1){background:orange;}
+.box3 ul li:nth-child(3){background:skyblue;}
+.box3 ul li:nth-child(5){background:#89c47d;}
+.box3 p{
+  width:950px;
+  line-height:32px;
+  font-size:15px;
+  text-align:center;
+  color:#464646;
+}
+/* boxb */
+.boxb h3{
+  text-align:center;
+  font-size:30px;
+  padding:50px 0 15px 0;
+}
+.boxb hr{
+  border: 1px solid black; 
+  width: 0px; 
+  height: 130px;
+  display:block;
+  margin:0 auto;
+}
+.boxb ul{
+  display:inline-block;
+}
+.boxb ul li{
+  float:left;
+  position:relative;
+  left:200%;
+  margin:35px 10px;
+  background:#fff;
+  border:1px solid #b42222;
+  padding:10px 30px;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.boxb ul li:hover{
+  background:#b42222;
+  color:#fff;
+}
+.boxb ul li:nth-child(2){
+  background:#b42222;
+  color:#fff;
+  cursor:default;
+}
+.boxb p{
+  text-align:center;
+  font-size:15px;
+  line-height:24px;
+  margin-bottom:30px;
+}
+/*  */
+
+
+.box9{
+  width:200px;
+  height:50px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:#fff;
+  border:1px solid #b42222;
+  padding:5px;
+  font-weight:bold;
+  margin:60px auto;  
+}
+/* 제품정보 box10 */
+.box10 dl{
+  width:950px;
+  margin:50px auto;
+  background:linear-gradient(-90deg, #810000, #dbabab);
+
+}
+.box10 dt{
+  line-height:25px;
+  font-size:large;
+  text-indent:32px;
+  padding-top:8px;
+  font-weight:bold;
+  height:35px;
+  border:solid #fff;
+  border-width:0 0 1px 0;
+  cursor:pointer;
+}
+.box10 dt.selected{
+  cursor:default;
+}
+.box10 img{
+  float:left;
+  width:540px;
+  margin:40px auto;
+}
+.box10 dd{
+  padding-left:50px;
+  height:500px;
+  background:#f3f3f3;
+
+}
+.box10 h5,.box10 dd p{
+  text-indent:50px;
+}
+.box10 dd p{
+  padding:5px;
+}
+.box10 h5{
+  font-size:18px;
+  padding:33px 0 20px 0;
+  text-indent:40px;
+}
+.mr{
+  margin-left:482px;
+}
+.mr p{
+  margin-left:15px;
+}

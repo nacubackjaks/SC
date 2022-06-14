@@ -1,0 +1,196 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+
+/* 통일시킬 header 부분 */
+/* 삼지창 메뉴버튼만 */
+.menu_toggle_btn{
+  position:absolute;
+  top:50px;
+  left:30px;
+  display:block;
+  width:40px;
+  height:40px;
+  background:none;
+  border:none;
+  margin: 0 auto;
+  cursor:pointer;
+  z-index:10000;
+}
+.menu_toggle_btn span{
+  position: absolute;
+  left:0;
+  top:-2px;
+  width:70%;
+  height:4px;
+  background:#b42222;
+  content:'';
+  transition:all 0.3s;
+  margin-left:15%;
+  z-index:100;
+}
+.menu_toggle_btn:before,
+.menu_toggle_btn:after{
+  position:absolute;
+  left:0;
+  width: 70%;
+  height:4px;
+  background:#b42222;
+  content:'';
+  transition: all 0.3s;
+  margin-left:15%;
+}
+.menu_toggle_btn:before{
+  transform:translateY(-12px);
+}
+.menu_toggle_btn:after{
+  transform:translateY(8px);
+}
+.menu_toggle_btn.menu-open:before{
+  transform:translateY(0px) rotate(135deg);
+}
+.menu_toggle_btn.menu-open:after{
+  transform:translateY(0px) rotate(-135deg);
+}
+.menu_toggle_btn.menu-open span{
+  opacity: 0;
+}
+/*bar2 */
+/*  bar~~~~~~~~~~~~~~ */
+.bar2{
+  width:100%;
+  height:90px;
+  background:rgb(255, 255, 255, 0.8);
+  text-align:center;
+  position:relative;
+  z-index:10;
+}
+.bar2 .logo2{
+  left:150px;
+  top:28px;
+  position:absolute;
+}
+
+/*삼지창 메뉴버튼을 클릭했을때*/
+
+.menu > ul{
+  max-width:1200px;
+  margin:20px auto;
+  padding:100px 0;
+}
+.menu > ul > li{
+  float:left;
+  width:20%;
+}
+.menu >ul >li > a{
+  font-weight:bold;
+  color:#b42222;
+}
+.menu > ul > li > ul > li{
+  margin:15px 0;
+}
+.menu > ul > li > ul > li > a{
+  font-size:14px;
+  color:#fff;
+}
+.menu > ul > li > ul > li:hover > a{
+  text-decoration:underline;
+}
+  /* background:gray; */
+
+#main2 ul li>a{
+  display:block;
+}
+/* 메인비주얼 */
+
+#mainVisual{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+#mainVisual ul li{
+  display:none;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+#mainVisual ul li.main0{
+  display:block; 
+  background:url(../image/heart2.jpg) no-repeat 0 0;
+  background-size:cover;
+}
+#mainVisual ul li.main1{
+  background:url(../image/italy2.jpg) no-repeat 0 0;
+  background-size:cover;
+}
+#mainVisual ul li.main2{
+  background:url(../image/people2.jpg) no-repeat 0 0;
+  background-size:cover;
+}
+#mainVisual ul li.main3{
+  background:url(../image/town2.jpg) no-repeat 0 0;
+  background-size:cover;
+}
+#mainVisual .btn{
+  position:absolute;
+  top:50px;
+  right:10px;
+}
+/* 메인비주얼 버튼 */
+#mainVisual .btn{
+  position:absolute;
+  top:290px;
+  left:90px;
+}
+#mainVisual .btn>span{
+  display:inline-block;
+  width:15px;
+  height:15px;
+  margin-right:15px;
+  background:#d5d5d6;
+  cursor:pointer;
+}
+#mainVisual .btn>span.active{
+  display:inline-block;
+  width:45px;
+  height:15px;
+  background:yellow;
+}
+
+#mainVisual ul li dl{
+/*   flex-direction:column;
+  align-items:center;
+  display:flex; */
+  margin-top:300px;
+  padding-left:100px;
+}
+#mainVisual ul li dl dt{
+  font-size:110px;
+  font-weight:bold;
+  color:#fff;
+}
+#mainVisual ul li dl dd{
+  font-size:19px;
+  color:#fff;
+  padding-top:10px;
+/*   text-align:center; */
+}
+.more{
+  margin-top:20px;
+  width:100px;
+  height:30px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:12px;
+/*   margin:20px auto; */
+  transition:all 2s;
+  text-align:center;
+}
+
+

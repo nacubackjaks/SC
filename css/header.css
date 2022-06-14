@@ -1,0 +1,205 @@
+
+
+/* 삼지창 메뉴버튼만 */
+.menu_toggle_btn{
+  position:absolute;
+  top:50px;
+  left:30px;
+  display:block;
+  width:40px;
+  height:40px;
+  background:none;
+  border:none;
+  margin: 0 auto;
+  cursor:pointer;
+  z-index:10000;
+}
+.menu_toggle_btn span{
+  position: absolute;
+  left:0;
+  top:-2px;
+  width:70%;
+  height:4px;
+  background:#b42222;
+  content:'';
+  transition:all 0.3s;
+  margin-left:15%;
+  z-index:100;
+}
+.menu_toggle_btn:before,
+.menu_toggle_btn:after{
+  position:absolute;
+  left:0;
+  width:70%;
+  height:4px;
+  background:#b42222;
+  content:'';
+  transition: all 0.3s;
+  margin-left:15%;
+}
+.menu_toggle_btn:before{
+  transform:translateY(-12px);
+}
+.menu_toggle_btn:after{
+  transform:translateY(8px);
+}
+.menu_toggle_btn.menu-open:before{
+  transform:translateY(0px) rotate(135deg);
+}
+.menu_toggle_btn.menu-open:after{
+  transform:translateY(0px) rotate(-135deg);
+}
+.menu_toggle_btn.menu-open span{
+  opacity: 0;
+}
+/* 로고위치&nav bar */
+
+/*  bar~~~~~~~~~~~~~~ */
+.bar{
+  width:100%;
+  height:90px;
+  background:#fff;
+  text-align:center;
+  position:relative;
+  z-index:10;
+}
+.bar h1{
+  float:left;
+  padding:30px 50px 0 150px;
+}
+.barMenu{float:right;}
+.barMenu>li{
+  float:left;
+  width:150px;
+  position:relative;
+/*   background:lightblue; */
+  right:70%;
+  margin-top:30px;
+}
+.barMenu>li>a{
+  display:block;
+  color:#464646;
+  font-size:15px;
+  font-weight:600;
+  line-height:50px;
+}
+.barMenu>li:hover>a{color:#b42222;}
+/* bar~~~~~~~~~~~~~~submenu */
+.barMenu>li .smenu{
+  display:none;
+  position:absolute;
+  top:100%;
+  padding-top:10px;
+  background:#fff;
+  width:150px;
+  height:90px;
+}
+.barMenu>li .first{border-left:none;}
+.barMenu>li ul li{
+  padding:10px 0px;
+  transition:all 0.4s;
+}
+.barMenu>li ul li a{
+  color:#666;
+  font-size:13px;
+}
+
+
+/* bar_fix________________________________ */
+.bar_fix{/*  절대건들지마 */
+  width:100%; 
+  height:90px;
+  top:0px;
+  left:0px;
+  background:#fff;
+  box-shadow:2px 2px 5px #ccc;
+  text-align:center;
+  position:fixed;
+  z-index:100000;
+  margin-top:-300px;
+}
+.bar_fix h1{
+  float:left;
+  padding:30px 50px 0 150px;
+}
+.barMenu_fix{float:right;}
+.barMenu_fix>li{
+  float:left;
+  width:150px;
+  position:relative;
+/*   background:lightblue; */
+  right:70%;
+  margin-top:30px;
+}
+.barMenu_fix>li>a{
+  display:block;
+  color:#464646;
+  font-size:15px;
+  font-weight:600;
+  line-height:50px;
+}
+.barMenu_fix>li:hover>a{color:#b42222;}
+/* bar~~~~~~~~~~~~~~submenu */
+.barMenu_fix>li .smenu_fix{
+  display:none;
+  position:absolute;
+  top:100%;
+  padding-top:10px;
+  background:#fff;
+/*   box-shadow: 2px 2px 5px #ccc; */
+  width:150px;
+  height:90px;
+  z-index:1000;
+}
+.barMenu_fix>li .first{border-left:none;}
+.barMenu_fix>li ul li{
+  padding:10px 0px;
+  transition:all 0.4s;
+}
+.barMenu_fix>li ul li a{
+  color:#666;
+  font-size:13px;
+}
+
+/*삼지창 메뉴버튼을 클릭했을때*/
+#main{
+  width:100%;
+  height:50px;
+}
+.menu{
+  display:none; /* 제이쿼리에서 보이게 할때*/
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  font-size:29px;
+  text-align:center;
+  background:rgba(66, 66, 66, 0.5);
+  z-index:500;
+}
+
+.menu > ul{
+  max-width:1200px;
+  margin:20px auto;
+  padding:100px 0;
+}
+.menu > ul > li{
+  float:left;
+  width:20%;
+}
+.menu >ul >li > a{
+  font-weight:bold;
+  color:#b42222;
+}
+.menu > ul > li > ul > li{
+  margin:15px 0;
+}
+.menu > ul > li > ul > li > a{
+  font-size:14px;
+  color:#fff;
+}
+.menu > ul > li > ul > li:hover > a{
+  text-decoration:underline;
+}
+  /* background:gray; */
